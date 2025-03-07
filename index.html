@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SC Protest</title>
+<style>
+    body {
+        font-family: Georgia, serif;
+        font-size: 14pt;
+        margin: 19px; /*Reduce overall margin*/
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header span {
+        font-size: 10pt;
+    }
+    .print-button {
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 16pt;
+    }
+    .protest-list {
+        margin-top: 15px; /*reduce top margin*/
+    }
+    .protest-item {
+        margin-bottom: 15px; /* Reduce space between items */
+        white-space: pre-line;
+        line-height: 0.7; /* Reduce line height */
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    @media print {
+        .print-button { display: none; }
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        <span>SCprotest.com</span>
+        <button class="print-button" onclick="window.print()">🖨️</button>
+    </div>
+    <span>UPCOMING PROTESTS</span>
+    <div class="protest-list">
+        <div class="protest-item">
+		    <span style="font-size: 10pt; text-transform: uppercase;">Columbia State House</span>
+		    <br><span style="font-size: 12pt;">Saturday, March 8, 2025  12-2 PM</span>
+		    <br>Unite & Resist National Day of Action
+		    <br>International Women's Day
+		    <br><span style="font-size: 10pt;">WomensMarch.com</span>
+		</div>
+        <div class="protest-item">
+		    <span style="font-size: 10pt; text-transform: uppercase;">Columbia State House</span>
+		    <br><span style="font-size: 12pt;">Saturday, March 29, 2025 12-2 PM</span>
+		    <br>REaD OUR LIPS
+		    <br>Wear your red lipstick for women's rights.
+		    <br><span style="font-size: 10pt;">Haley and Blake</span>
+		</div>
+        <!-- Duplicate these as needed -->
+    </div><br><br>
+    <p style="font-size: 10pt;">email: <a href="mailto:bunny@bunnyslipperresistance.com">bunny@bunnyslipperresistance.com</a></p>
+</body>
+</html>
